@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 	struct sockaddr_in addr;
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(9999);
-	*(DWORD*)&addr.sin_addr = inet_addr("127.0.0.1");
+	*(DWORD*)&addr.sin_addr = inet_addr("192.168.177.129");
 	bind(s, (struct sockaddr*)&addr, 16);
 	while (1) {
 		listen(s, 1);
